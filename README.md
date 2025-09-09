@@ -1,4 +1,4 @@
-# IDS-706-week-2
+# IDS-706-week-2-Analysis
 
 This project will:
     
@@ -16,4 +16,29 @@ This project will:
         7.Apply K-mean to cluster people with different levels of salaries.
         8.Apply Linear regression to find the relationship between the colunns salary_usc and years_experience.
         9.Visualize the results of both models with different plots.
+        
+The project Structure:
+
+IDS-706-week-2-Analysis
+├── IDS_706_Week2_Analysis.ipynb
+├── requirements.txt
+├── Makefile
+├── .devcontainer/
+│   └── devcontainer.json
+├── Data
+│   └── ai_job_dataset1.csv
+├── .gitignore
+├── README.md
        
+
+Run the requirements.txt which contains the following packages:
+create a requirements.txt file with:
+pandas
+numpy
+matplotlib
+yfinance
+pytest
+flake8
+seaborn
+jupyter
+scipy
