@@ -65,7 +65,7 @@ IDS_706_Week2_Analysis.ipynb
 test reulst:
 
 Run with docker:
-![](/Users/hejiang/PycharmProjects/pythonProject/IDS-706-week-2/pics/Dockerfile test result.jpeg)
+![](../IDS-706-week-2/pics/Dockerfile test result.jpeg)
 
 Run locally:
-![](/Users/hejiang/PycharmProjects/pythonProject/IDS-706-week-2/pics/Local test result.jpeg)
+![](../IDS-706-week-2/pics/Local test result.jpeg)
