@@ -65,9 +65,7 @@ IDS_706_Week2_Analysis.ipynb
 test reulst:
 
 Run with docker:
-
-![](../../../../../var/folders/xr/cf3s83ls3ln7173fhjgq50_m0000gn/T/TemporaryItems/NSIRD_screencaptureui_xIc0VO/Screenshot 2025-09-15 at 10.08.04 pm.png)
+![](/Users/hejiang/Downloads/Dockerfile test result.jpeg)
 
 Run locally:
-
-![](../../../../../var/folders/xr/cf3s83ls3ln7173fhjgq50_m0000gn/T/TemporaryItems/NSIRD_screencaptureui_cv49Wy/Screenshot 2025-09-15 at 9.54.55 pm.png)
+![](/Users/hejiang/Downloads/Local test result.jpeg)
