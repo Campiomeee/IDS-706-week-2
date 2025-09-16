@@ -65,7 +65,8 @@ IDS_706_Week2_Analysis.ipynb
 test reulst:
 
 Run with docker:
-![](../IDS-706-week-2/pics/Dockerfile test result.jpeg)
+![](pics/dockerfile_test_result.jpeg)
+
 
 Run locally:
-![](../IDS-706-week-2/pics/Local test result.jpeg)
+![](pics/local_test_result.jpeg)
