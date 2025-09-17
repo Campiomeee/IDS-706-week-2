@@ -29,6 +29,7 @@ flake8
 seaborn
 jupyter
 scipy
+scikit-learn
 
 The Second Part of the project: Pytest and container.
 # 2. IDS 706 Week 2 Project – Reproducibility & Testing
@@ -44,6 +45,26 @@ This repository contains a **data analysis pipeline** that has been made reprodu
 - **CI-Ready**: Easily extendable to GitHub Actions or other CI/CD tools.  
 
 ---
+### created a Dockerfile with 
+
+FROM python:3.11-slim
+
+WORKDIR /app
+
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+
+COPY . .
+
+ENV PYTHONPATH=/app
+
+CMD ["pytest"]
+
+Write down test files for each of the modules:
+test_analysis.py
+test_date.py
+test_model.py
+test_preprocess.py
 
 ## 📂 Repository Structure!
 project/
@@ -65,7 +86,7 @@ IDS_706_Week2_Analysis.ipynb
 test reulst:
 
 Run with docker:
-![](pics/dockerfile_test_result.jpeg)
+![](pics/dockerfile_test_result.png)
 
 
 Run locally:
