@@ -60,11 +60,11 @@ ENV PYTHONPATH=/app
 
 CMD ["pytest"]
 
-Write down test files for each of the modules:
-test_analysis.py
-test_date.py
-test_model.py
-test_preprocess.py
+### Write down test files for each of the modules:
+## test_analysis.py
+## test_date.py
+## test_model.py
+## test_preprocess.py
 
 ## 📂 Repository Structure!
 project/
