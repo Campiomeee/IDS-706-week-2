@@ -6,7 +6,7 @@ def drop_missing(df: pd.DataFrame) -> pd.DataFrame:
     return df.dropna()
 
 
-def filter_high_salary(df: pd.DataFrame, min_salary: int = 100000) -> pd.DataFrame:
+def filter_high_salary(df: pd.DataFrame, min_salary: int = 100000):
     return df[df["salary_usd"] > min_salary]
 
 
