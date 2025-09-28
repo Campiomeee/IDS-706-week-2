@@ -2,6 +2,13 @@
 
 [![CI](https://github.com/Campiomeee/IDS-706-week-2/actions/workflows/ci.yml/badge.svg)](https://github.com/Campiomeee/IDS-706-week-2/actions/workflows/ci.yml)
 
+
+This project investigates global AI job market and salary trends. 
+The key question is: What factors drive salary differences across roles, 
+experience levels, and regions? Answering this provides value for 
+job seekers, employers, and policymakers who want to understand 
+compensation in AI careers.
+
 ## 🚀  This project will:
     
     Use a dev container, Makefile, and GitHub Actions
@@ -18,6 +25,13 @@
         7.Apply K-mean to cluster people with different levels of salaries.
         8.Apply Linear regression to find the relationship between the colunns salary_usc and years_experience.
         9.Visualize the results of both models with different plots.
+
+## 🧹 Data Cleaning
+- Removed missing values in `salary_usd` and `years_experience`.  
+- Dropped outliers (salaries below $10k or above $1M).  
+- Standardized categorical columns (job titles, countries).  
+- Checked for and removed duplicate job postings. 
+
 
 
 Run the requirements.txt which contains the following packages:
@@ -71,6 +85,26 @@ CMD ["pytest"]
 
  test_preprocess.py
 
+## 🚀 Quickstart
+Clone the repo:
+git clone https://github.com/Campiomeee/IDS-706-week-2.git
+
+cd IDS-706-week-2
+
+## Run locally
+
+Copy code
+
+make format
+
+make lint
+
+make test
+
+python run.py
+## Run with Docker:
+docker build -t ids706-project .
+docker run --rm ids706-project
 ## 📂 Repository Structure!
 project/
 init.py
@@ -83,16 +117,40 @@ test_data.py
 test_preprocess.py
 test_analysis.py
 test_model.py//
+workflows/ci.ymal/
 requirements.txt
+Makefile
 Dockerfile
 README.md
 IDS_706_Week2_Analysis.ipynb
 
-test reulst:
+## Test reulst && Screenshots:
 
 Run with docker:
+
 ![](pics/dockerfile_test_result.png)
 
 
 Run locally:
+
 ![](pics/local_test_result.jpeg)
+
+
+Comparison of refactoring:
+
+![](pics/Extract.jpg)
+
+Extract Method:
+
+![](pics/refactoring.jpg)
+
+## 📈 Key Takeaways
+- Experience level is the strongest driver of salary differences.  
+- Senior ML/AI roles cluster together with higher salaries.  
+- US-based jobs offer the highest salaries compared to other regions.  
+- Regression models confirm a strong positive correlation between years of experience and salary.  
+
+## 🔮 Future Work
+- Add more ML models (RandomForest, XGBoost).  
+- Incorporate geographic features for deeper regional analysis.  
+- Extend visualizations to interactive dashboards (Plotly/Streamlit).
