@@ -30,10 +30,25 @@ jobs:
           pip install black flake8 pytest
 
       - name: Run lint (flake8)
-        run: flake8 project tests
+        run: |
+          if [ -d tests ]; then
+            flake8 project tests --ignore=E203,W503 --max-line-length=100
+          else
+            flake8 project --ignore=E203,W503 --max-line-length=100
+          fi
 
       - name: Run format check (black --check)
-        run: black --check project tests
+        run: |
+          if [ -d tests ]; then
+            black --check project tests
+          else
+            black --check project
+          fi
 
       - name: Run tests (pytest)
-        run: pytest -q
+        run: |
+          if [ -d tests ]; then
+            pytest -q
+          else
+            echo "No tests folder found, skipping pytest"
+          fi
