@@ -138,11 +138,15 @@ Run locally:
 
 Comparison of refactoring:
 
-![](pics/Extract.jpg)
+![](pics/refactoring.jpg)
 
 Extract Method:
 
-![](pics/refactoring.jpg)
+![](pics/Extract.jpg)
+
+
+CI Workflow:
+![](pics/workflows.jpg)
 
 ## 📈 Key Takeaways
 - Experience level is the strongest driver of salary differences.  
