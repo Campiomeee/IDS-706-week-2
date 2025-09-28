@@ -11,5 +11,5 @@ def data_summary(df: pd.DataFrame) -> dict:
         "shape": df.shape,
         "columns": list(df.columns),
         "nulls": df.isnull().sum().to_dict(),
-        "description": df.describe(include="all").to_dict()
+        "description": df.describe(include="all").to_dict(),
     }

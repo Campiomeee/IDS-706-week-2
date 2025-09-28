@@ -12,11 +12,9 @@ def kmeans_cluster(X_scaled, values_of_k=range(2, 11)):
         inertias.append(km.inertia_)
         silhouettes.append(silhouette_score(X_scaled, km.labels_))
 
-    results = pd.DataFrame({
-        "k": list(values_of_k),
-        "inertia": inertias,
-        "silhouette": silhouettes
-    })
+    results = pd.DataFrame(
+        {"k": list(values_of_k), "inertia": inertias, "silhouette": silhouettes}
+    )
     return results, models
 
 

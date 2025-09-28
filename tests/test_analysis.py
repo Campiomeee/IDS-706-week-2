@@ -3,10 +3,7 @@ from project.analysis import average_salary_by_role, count_high_salary
 
 
 def test_average_salary_by_role():
-    df = pd.DataFrame({
-        "job_title": ["A", "A", "B"],
-        "salary_usd": [100, 200, 300]
-    })
+    df = pd.DataFrame({"job_title": ["A", "A", "B"], "salary_usd": [100, 200, 300]})
     avg = average_salary_by_role(df)
     assert "salary_usd" in avg.columns
     assert avg.loc[avg["job_title"] == "A", "salary_usd"].iloc[0] == 150
