@@ -1,8 +1,10 @@
 import pandas as pd
 
+
 def load_data(path: str) -> pd.DataFrame:
     """Load dataset from CSV file."""
     return pd.read_csv(path)
+
 
 def data_summary(df: pd.DataFrame) -> dict:
     return {

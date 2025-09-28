@@ -1,5 +1,4 @@
 import pandas as pd
-import numpy as np
 from project.model import kmeans_cluster, best_k
 from sklearn.preprocessing import StandardScaler
 

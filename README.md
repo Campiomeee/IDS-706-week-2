@@ -1,5 +1,7 @@
 # 1. IDS-706-week-2-Analysis
 
+[![CI](https://github.com/Campiomeee/IDS-706-week-2/actions/workflows/ci.yml/badge.svg)](https://github.com/Campiomeee/IDS-706-week-2/actions/workflows/ci.yml)
+
 ## 🚀  This project will:
     
     Use a dev container, Makefile, and GitHub Actions
